@@ -24,7 +24,7 @@ jobs:
       - name: checkout
           uses: actions/checkout@v4
       - name: Set up Node.js
-          uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
           with:
             node-version: 16
             cache: 'npm'
@@ -34,11 +34,11 @@ jobs:
       - name: Build    
           run: npm run build
       - name: Set up Github Pages
-          uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5
       - name: Upload
-          uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3
           with:
-            path: "."
+          path: "."
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
