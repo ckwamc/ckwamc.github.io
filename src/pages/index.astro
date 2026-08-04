@@ -1,0 +1,17 @@
+---
+import data from "../data/messages.json";
+
+const [title, subtitle] = data.messages;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>{data.title}</title>
+</head>
+<body>
+  <h1>{title}</h1>
+  <h2>{subtitle}</h2>
+</body>
+</html>
